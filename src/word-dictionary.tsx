@@ -54,6 +54,7 @@ export default function WordDictionary(props: { from: string; to: string }) {
         <List.Item
           key={x.title}
           title={x.title}
+          accessories={x.detail ? [{ icon: Icon.MagnifyingGlass }] : []}
           id={index.toString()}
           actions={
             <ActionPanel>

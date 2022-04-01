@@ -5,7 +5,7 @@ export function resToDetail(word: string, res: any) {
       for (const x of res.translations.entryGroups) {
         detail += `##### ${x.gategory}\n---\n`;
         for (const y of x.entries) {
-          detail += `${y.text}\n\n`;
+          detail += `${y.text} ${y.context ? "_" + y.context + "_" : ""}\n\n`;
         }
       }
     } else if (!res.definitions.empty) {
