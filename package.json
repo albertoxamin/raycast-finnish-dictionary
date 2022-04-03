@@ -2,25 +2,29 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "finnish-dictionary",
   "title": "Finnish Dictionary",
-  "description": "",
+  "description": "MacOS has a great dictionary, but it's not available for Finnish. This extension adds a Finnish dictionary at your fingertips.",
   "icon": "flag.png",
   "author": "albertoxamin",
   "license": "MIT",
   "commands": [
     {
       "name": "fe",
-      "title": "fe",
-      "subtitle": "finnish to english",
+      "title": "Finnish to English",
+      "subtitle": "Define a finnish word to english",
       "description": "",
       "mode": "view"
     },
     {
       "name": "ef",
-      "title": "ef",
-      "subtitle": "english to finnish",
+      "title": "English to Finnish",
+      "subtitle": "Define an english word to finnish",
       "description": "",
       "mode": "view"
     }
+  ],
+  "categories": [
+    "Other",
+    "Web"
   ],
   "dependencies": {
     "@raycast/api": "^1.31.0",

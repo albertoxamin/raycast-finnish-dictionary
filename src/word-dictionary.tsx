@@ -33,7 +33,7 @@ export default function WordDictionary(props: { from: string; to: string }) {
           `https://api.redfoxsanakirja.fi/redfox-api/api/basic/query/${props.from}/${props.to}/${sugg[i].title}`
         )
       );
-      sugg[i].detail = resToDetail(sugg[i].title, tran.data);
+      sugg[i].detail = resToDetail(sugg[i].title, props.from, props.to, tran.data);
       if (currentQuery !== query) return;
       setSuggestions(sugg);
     }
